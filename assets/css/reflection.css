@@ -1,0 +1,7 @@
+.reflection {
+    position: absolute;
+    opacity: .2;
+    transform: scaleY(-1);
+    top: 97%;
+    filter: blur(2px);
+}

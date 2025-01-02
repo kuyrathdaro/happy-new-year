@@ -1,0 +1,40 @@
+.banner {
+    position: absolute;
+    width: 50px;
+    height: 30px;
+    background-color: #ffd60a;
+    left: 225px;
+    box-shadow: inset 0 -10px #d90429, inset 0 10px #55a630;
+    overflow: hidden;
+    opacity: .3;
+    animation: change 5s linear infinite;
+    -webkit-animation: change 5s linear infinite;
+}
+
+@keyframes change {
+    0% {
+        filter: brightness(1.2) hue-rotate(0) saturate(7);
+    }
+
+    50% {
+        filter: brightness(2) hue-rotate(360deg) saturate(7);
+    }
+
+    100% {
+        filter: brightness(1.2) hue-rotate(0) saturate(7);
+    }
+}
+
+@-webkit-keyframes change {
+    0% {
+        filter: brightness(1.2) hue-rotate(0) saturate(7);
+    }
+
+    50% {
+        filter: brightness(2) hue-rotate(360deg) saturate(7);
+    }
+
+    100% {
+        filter: brightness(1.2) hue-rotate(0) saturate(7);
+    }
+}
