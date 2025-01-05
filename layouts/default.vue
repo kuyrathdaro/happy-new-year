@@ -2,6 +2,6 @@
 <template>
     <div>
         <slot />
-        <!-- <AppFooter /> -->
+        <AppFooter />
     </div>
 </template>

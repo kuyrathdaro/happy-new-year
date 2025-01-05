@@ -6,6 +6,7 @@
     <Reflection />
     <BuildingRowTwo />
     <BuildingRowThree />
+    <Firework />
   </div>
 </div>
 </template>

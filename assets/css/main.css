@@ -1,21 +1,24 @@
 html, body {
     margin: 0;
     padding: 0;
-    height: 100%;
+    overflow: hidden;
 }
 
 .night-container {
+    position: absolute;
     height: 100vh;
     width: 100vw;
     cursor: pointer;
+    margin: 0;
+    padding: 0;
 }
 
 .night-container:before {
     content: "";
     position: absolute;
     background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
     top: 0;
     animation: down .5s ease forwards;
     -webkit-animation: down .5s ease forwards;
@@ -58,8 +61,29 @@ html, body {
         -80px -10px rgba(255, 255, 255, .7), 
         -40px -20px rgba(255, 255, 255, .4), 
         40px 30px rgba(255, 255, 255, .4), 
-        140px 30px rgba(255, 255, 255, .4), 
-        250px 30px rgba(255, 255, 255, .4);
+        140px -10px rgba(255, 255, 255, .4), 
+        250px 10px rgba(255, 255, 255, .4),
+        300px -10px rgba(255, 255, 255, .4),
+        350px 0 rgba(255, 255, 255, .4),
+        400px -10px rgba(255, 255, 255, .4),
+        450px -20px rgba(255, 255, 255, .4),
+        500px 30px rgba(255, 255, 255, .4),
+        550px -10px rgba(255, 255, 255, .4),
+        600px 10px rgba(255, 255, 255, .4),
+        650px -10px rgba(255, 255, 255, .4),
+        750px 0 rgba(255, 255, 255, .4),
+        800px -10px rgba(255, 255, 255, .4),
+        8500px -20px rgba(255, 255, 255, .4),
+        900px 30px rgba(255, 255, 255, .4),
+        1000px -10px rgba(255, 255, 255, .4),
+        1100px 10px rgba(255, 255, 255, .4),
+        1150px -10px rgba(255, 255, 255, .4),
+        1200px 0px rgba(255, 255, 255, .4),
+        1250px -10px rgba(255, 255, 255, .4),
+        1300px -20px rgba(255, 255, 255, .4),
+        1350px 30px rgba(255, 255, 255, .4),
+        1400px -10px rgba(255, 255, 255, .4),
+        1450px 10px rgba(255, 255, 255, .4);
     filter: drop-shadow(0 0 3px yellow);
     animation: movedown .5s ease forwards 2.5s;
     -webkit-animation: movedown .5s ease forwards 2.5s;
