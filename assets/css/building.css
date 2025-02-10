@@ -1,9 +1,8 @@
 .building-row-one {
-    position: absolute;
+    position: fixed;
     background-color: #03171e;
     width: 70px;
     height: 150px;
-    top: 58.6%;
     box-shadow: 20px 0 #03171e, 250px 0 #03171e, 430px 0 #03171e;
     opacity: 0;
     transform-origin: bottom;
@@ -62,7 +61,6 @@
     background-color: #032842;
     width: 80px;
     height: 200px;
-    top: 55%;
     z-index: -1;
     box-shadow: 70px 30px #032842, 140px 50px #032842, 210px 50px #032842, 210px -20px #032842, 270px 20px #032842, 350px 0 #032842;
     transform-origin: bottom;

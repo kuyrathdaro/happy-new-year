@@ -1,14 +1,15 @@
+import tailwindcss from "@tailwindcss/vite";
+
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   compatibilityDate: '2024-11-01',
   devtools: { enabled: false },
   modules: ['@nuxt/icon'],
   css: ['~/assets/css/main.css'],
-  postcss: {
-    plugins: {
-      tailwindcss: {},
-      autoprefixer: {},
-    },
+  vite: {
+    plugins: [
+      tailwindcss()
+    ]
   },
   icon: {
     serverBundle: {
@@ -23,5 +24,5 @@ export default defineNuxtConfig({
         { src: "https://s3-us-west-2.amazonaws.com/s.cdpn.io/329180/MyMath.js", async: true },
       ]
     }
-  }
+  },
 })
